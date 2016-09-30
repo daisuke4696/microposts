@@ -1,0 +1,6 @@
+<h1>フォロワー一覧</h1>
+<% @users.each do |user| %>
+ <%= gravatar_for user %>
+ <%= link_to user.name, user %>
+ <br>
+<% end %>
