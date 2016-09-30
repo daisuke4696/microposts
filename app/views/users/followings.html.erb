@@ -1,6 +1,12 @@
 <h1>フォロー一覧</h1>
+
 <% @users.each do |user| %>
- <%= gravatar_for user %>
- <%= link_to user.name, user %>
-<br>
+<div class="media">
+  <div class="media-left">
+    <%= gravatar_for user %>
+  </div>
+  <div class="media-body">
+   <%= link_to user.name, user %>
+  </div>
+</div>
 <% end %>
